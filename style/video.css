@@ -1,0 +1,154 @@
+
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 13px;
+    row-gap: 20px;
+}
+
+@media (max-width: 799px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 999px){
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+
+/* CSS FOR SuperSimpleDev */
+
+.container-main-video-preview1 {
+    cursor: pointer;
+}
+
+.container-thumbnail {
+    margin-bottom: 12px;
+    position: relative;
+}
+
+.time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    font-size: 0.7em;
+    right: 10px;
+    bottom: 10px;
+    font-family: 'Roboto', Arial;
+    padding: 4px;
+    font-weight: 500;
+    border-radius: 2px;
+
+}
+
+.thumbnail {
+    width: 100%;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 37px 1fr;
+    column-gap: 11px;
+}
+
+.container-profile {
+    position: relative;
+}
+
+.container-profile .tooltip-channel {
+    position: absolute;
+    width: 220px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px grey;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+}
+
+.container-profile:hover .tooltip-channel {
+    opacity: 1;
+}
+
+.tooltip-channel {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.subs {
+    line-height: 5px;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.bold {
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.subscriber {
+    font-size: 0.7em;
+    color: grey;
+}
+
+.channel {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    margin-left: 10px;
+}
+
+.profile-picture {
+    width: 36px;
+    border-radius: 36px;
+}
+
+.container-horizontal {
+
+}
+
+.container-title {
+}
+
+.video-title {
+    font-weight: 500;
+    font-size: 13px;
+    margin-top: 0px;
+}
+
+.container-author {}
+
+.video-author {
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    text-decoration: none;
+    margin-top: -3px;
+}
+
+.container-views {
+    margin-top: -10px;
+
+}
+
+.video-stats {
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+}
+
+.waktu {
+    color: rgb(109, 109, 109);
+    font-size: 12px;
+    margin-top: -10px;
+}
